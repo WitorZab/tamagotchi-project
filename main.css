@@ -1,25 +1,71 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(skyblue, white);
+    background-attachment: fixed;
+}
 .tamagotchi{
+    height: 750px;
+    max-width: 1000px;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+#honger{
+    font-size: 35px;
+}
+#slaap{
+    font-size: 35px;
+}
+#plezier{
+    font-size: 35px;
+}
+.emoties{
+    font-size: 20px;
 }
 .buttons button{
     margin-top: 15px;
     font-size: 20px;
+    width: 155px;
+    border-radius: 5px;
+    border: 2px solid;
+    background-color: white;
+    font-weight: bold;
+}
+.buttons button:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
 }
 .button-revive button{
     margin-top: 5px;
-    font-size: 20px;   
+    font-size: 20px;
+    width: 155px;
+    border-radius: 5px;
+    border: 2px solid;
+    background-color: white;
+    font-weight: bold;
+}
+.button-revive button:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
 }
 
 #dood{
     display: none;
+    font-size: 50px;
 }
 
 .honger-bar{
     border: 2px solid red;
+    border-radius: 10px;
     height: 20px;
-    max-width: 250px;
+    max-width: 300px;
 }
 #honger-bar-inner{
     background-color: red;
@@ -27,22 +73,24 @@
     width: 100%;
 }
 .slaap-bar{
-    border: 2px solid blue;
+    border: 2px solid deepskyblue;
+    border-radius: 10px;
     height: 20px;
-    max-width: 250px;
+    max-width: 300px;
 }
 #slaap-bar-inner{
-    background-color: blue;
+    background-color: deepskyblue;
     height: 20px;
     width: 100%;
 }
 .plezier-bar{
-    border: 2px solid green;
+    border: 2px solid rgb(0, 200, 0);
+    border-radius: 10px;
     height: 20px;
-    max-width: 250px;
+    max-width: 300px;
 }
 #plezier-bar-inner{
-    background-color: green;
+    background-color: rgb(0, 200, 0);
     height: 20px;
     width: 100%;
 }

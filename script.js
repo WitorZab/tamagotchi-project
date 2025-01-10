@@ -3,10 +3,10 @@ var honger = 100
 function Honger(){
     var x = setInterval(function(){
         honger--;
-        document.getElementById("honger").innerHTML = "honger: " + honger
+        document.getElementById("honger").innerHTML = "Honger: " + honger
         emoties()
         dead()
-        updateHealthBars()
+        bars()
         if (honger < 0){
             clearInterval(x);
             document.getElementById("honger").innerHTML = ""
@@ -20,10 +20,10 @@ var slaap = 100
 function Slaap(){
     var x = setInterval(function(){
         slaap--;
-        document.getElementById("slaap").innerHTML = "slaap: " + slaap
+        document.getElementById("slaap").innerHTML = "Slaap: " + slaap
         emoties()
         dead()
-        updateHealthBars()
+        bars()
         if (slaap < 0){
             clearInterval(x);
             document.getElementById("slaap").innerHTML = ""
@@ -37,10 +37,10 @@ var plezier = 100
 function Plezier(){
     var x = setInterval(function(){
         plezier--;
-        document.getElementById("plezier").innerHTML = "plezier: " + plezier
+        document.getElementById("plezier").innerHTML = "Plezier: " + plezier
         emoties()
         dead()
-        updateHealthBars()
+        bars()
         if (plezier < 0){
             clearInterval(x);
             document.getElementById("plezier").innerHTML = ""
@@ -133,7 +133,7 @@ dead()
 
 function revive(){
     if (honger > 0 && slaap > 0 && plezier > 0) {
-        document.getElementById("emotie2").innerHTML = "im alive";
+        document.getElementById("emotie2").innerHTML = "Im alive";
         setTimeout(function() {
             document.getElementById("emotie2").innerHTML = "";
         }, 1500);
@@ -153,7 +153,7 @@ function revive(){
     document.getElementById("plezier").innerHTML = "plezier: " + plezier;
 
     document.getElementById("tamagotchi-emotie").src = "tamagotchi-happy.png";
-    document.getElementById("emotie2").innerHTML = "revived!";
+    document.getElementById("emotie2").innerHTML = "Revived!";
     
     setTimeout(function() {
         document.getElementById("emotie2").innerHTML = "";
@@ -163,10 +163,10 @@ function revive(){
     Slaap();
     Plezier();
     dead()
-    updateHealthBars()
+    bars()
 }
 
-function updateHealthBars() {
+function bars() {
     document.getElementById("honger-bar-inner").style.width = (honger) + "%";
     document.getElementById("slaap-bar-inner").style.width = (slaap) + "%";
     document.getElementById("plezier-bar-inner").style.width = (plezier) + "%";
