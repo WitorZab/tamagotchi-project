@@ -1,0 +1,48 @@
+.tamagotchi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons button{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.button-revive button{
+    margin-top: 5px;
+    font-size: 20px;   
+}
+
+#dood{
+    display: none;
+}
+
+.honger-bar{
+    border: 2px solid red;
+    height: 20px;
+    max-width: 250px;
+}
+#honger-bar-inner{
+    background-color: red;
+    height: 20px;
+    width: 100%;
+}
+.slaap-bar{
+    border: 2px solid blue;
+    height: 20px;
+    max-width: 250px;
+}
+#slaap-bar-inner{
+    background-color: blue;
+    height: 20px;
+    width: 100%;
+}
+.plezier-bar{
+    border: 2px solid green;
+    height: 20px;
+    max-width: 250px;
+}
+#plezier-bar-inner{
+    background-color: green;
+    height: 20px;
+    width: 100%;
+}

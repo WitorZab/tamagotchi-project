@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tamagotchi">
+        <div class="interace">
+
+            <h1 id="honger"></h1>
+            <div class="honger-bar">
+                <div id="honger-bar-inner"></div>
+            </div> 
+            <h1 id="slaap"></h1>
+            <div class="slaap-bar">
+                <div id="slaap-bar-inner"></div>
+            </div>
+
+            <h1 id="plezier"></h1>
+            <div class="plezier-bar">
+                <div id="plezier-bar-inner"></div>
+            </div>
+
+            <h1 id="dood">DOOD</h1>
+
+            <div class="buttons">
+                <button onclick="add_points_honger()">honger +10</button>
+                <button onclick="add_points_slaap()">slaap +10</button>
+                <button onclick="add_points_plezier()">plezier +10</button>
+            </div>
+
+            <div class="button-revive">
+                <button onclick="revive()">revive</button>
+            </div>
+        </div>
+
+        <img id="tamagotchi-emotie" src="tamagotchi.png" width="300">
+
+        <div class="emoties">
+            <h1 id="emotie"></h1>
+            <h1 id="emotie2"></h1>
+        </div>   
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
